@@ -5,7 +5,7 @@ use apricity::{Coordinate, Point, gui::SimpleWindow};
 use RustCourse2022::{FeatureCollection, Geometry};
 
 pub fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let data = std::fs::read_to_string("countries.geojson")?;
+    let data = std::fs::read_to_string("countries.geojson.txt")?;
     let countries: FeatureCollection = serde_json::from_str(&data)?;
 
     let width = 1024;
