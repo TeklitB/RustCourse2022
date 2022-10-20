@@ -21,8 +21,8 @@ pub fn main() -> Result<(), Box<dyn std::error::Error>> {
         .map(|city_list| *city_list.iter().max_by_key(|x| x.fields.population).unwrap())
         .collect();
 
-    let width = 1500;
-    let height = 750;
+    let width = 1024;
+    let height = 720;
 
     let mut image = apricity::gui::SimpleImage::new(width, height);
 
