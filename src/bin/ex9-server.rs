@@ -13,7 +13,7 @@ pub enum SocketEvent {
 }
 
 pub fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let server_name = "Emil's excellent server";
+    let server_name = "Teklit's excellent server";
 
     let (tx, rx) = std::sync::mpsc::channel::<SocketEvent>();
     std::thread::spawn(move || {
