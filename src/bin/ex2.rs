@@ -4,7 +4,7 @@
 //    list of cities and a given country.
 // 3. Write a function that takes a "filter" parameter, which is an enum
 //    of multiple variants: CountryCode, Admin1Code or TimeZone. Print
-use RustCourse2022::{City, CityData};
+use RustCourse2022::{City};
 pub fn load_cities() -> Result<Vec<City>, Box<dyn std::error::Error>> {
     let data = std::fs::read_to_string("cities100k.json")?;
     let cities: Vec<City> = serde_json::from_str(&data)?;

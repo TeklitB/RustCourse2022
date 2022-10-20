@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-use RustCourse2022::{City, CityData, load_cities};
+use RustCourse2022::{City, load_cities};
 
 pub fn main() -> Result<(), Box<dyn std::error::Error>> {
     let cities: Vec<City> = load_cities()?;

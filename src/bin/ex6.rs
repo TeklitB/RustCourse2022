@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-use apricity::{Coordinate, Point, gui::SimpleWindow};
+use apricity::{Point, gui::SimpleWindow};
 
 use RustCourse2022::{FeatureCollection, Geometry, load_cities, City};
 

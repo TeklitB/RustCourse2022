@@ -3,11 +3,14 @@
 
 use std::collections::HashMap;
 
-use RustCourse2022::{City, CityData, load_cities};
+use RustCourse2022::{City, load_cities};
 
+/*
 fn get_population(city: &&City) -> i64 {
     return -city.fields.population;
 }
+ */
+
 pub fn main() -> Result<(), Box<dyn std::error::Error>> {
     let cities: Vec<City> = load_cities()?;
 
